@@ -12,44 +12,51 @@
         <link rel="shortcut icon" href="pizza.jpg" type="image/x-icon">
     </head>
     <body>
-        <main>
+        <main style="color: #a87600;">
             <form action="data.json" method="POST">
-                <fieldset>
+                <fieldset style="border-color: red">
                     <!--Input boxes-->
                     <legend>User Information</legend>
                     <ul>
-                        <li>User Name: <input type="text" name="user.name" id="username"></li>
-                        <li>Password: <input type="password" type="text"></li>
+                        <li><label for="user.name">User Name: </label>
+                        <input type="text" name="user.name" id="username"></li>
+                        <li><label for="user.password">Password: </label>
+                        <input type="password" type="text"></li>
                     </ul>
                 </fieldset>
-                <fieldset>
-                    <legend>What drink do you want?</legend>
+                <fieldset style="border-color: red">
+                    <legend>What <strong>drink</strong> do <em>you</em> want?</legend>
                     <ul>
                         <!--Radio Buttons-->
-                        <li><input id="coke" value="Coke" name="drink1" type="radio">Coke</li>
-                        <li><input id="diet-coke" value="Diet Coke" name="drink2" type="radio">Diet Coke</li>
-                        <li><input id="sprite" value="Sprite" name="drink3" type="radio">Sprite</li>
-                        <li><input id="water" value="Water" name="drink4" type="radio">Water</li>
+                        <li><input id="coke" value="Coke" name="drink1" type="radio">
+                        <label for="user.coke">Coke</label></li>
+                        <li><input id="diet-coke" value="Diet Coke" name="drink2" type="radio">
+                        <label for="diet.coke">Diet Coke</label></li>
+                        <li><input id="sprite" value="Sprite" name="drink3" type="radio">
+                        <label for="user.sprite">Sprite</label></li>
+                        <li><input id="water" value="Water" name="drink4" type="radio">
+                        <label for="user.water">Water</label></li>
                     </ul>
                 </fieldset>
-                <fieldset>
+                <fieldset style="border-color: red">
                     <legend>Pizza Prefrence</legend>
                     <ul>
                         <!--Checkboxes-->
-                        <li><input type="checkbox">Plain</li>
-                        <li><input type="checkbox">Pepper</li>
-                        <li><input type="checkbox">Chicken</li>
-                        <li><input type="checkbox">Sausage</li> 
+                        <li><label for="user.plain"><input type="checkbox">Plain</li></label>
+                        <li><label for="user.pepper"><input type="checkbox">Pepperonni</li></label>
+                        <li><label for="user.chicken"><input type="checkbox">Chicken</li></label>
+                        <li><label for="user.sas"><input type="checkbox">Sausage</li></label>
                     </ul>
                 </fieldset>
-                <fieldset>
+                <fieldset style="border-color: red">
                     <!--Text Area-->
                     <legend>Special Intructions</legend>
                     <ul>
                         <li>Special Intructions<br><textarea name="special-intructions" id="special-instruction" cols="30" rows="10"></textarea></li>
                     </ul>
                     <!--Submit Button-->
-                    <button type="submit">Submit</button>
+                    <button style="border-radius: 25px; border-color: red;" type="submit">Submit</button>
+                    <input style="border-radius: 25px; border-color: blue;" type="button" onclick="prompt(`What's your Coupons?`)" value="Add a Coupon!">
                 </fieldset>
             </form>
         </main>
