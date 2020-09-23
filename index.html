@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Pizza Hut</title>
+        <link rel="stylesheet" href="style.css">
+        <meta name="author" content="Liam Stockton">
+        <meta name="description" content="The perfect place to order some pizza">
+        <meta property="og:image" content="pizza.jpg">
+        <meta property="og:title" content="Pizza Hut: Order Now!">
+        <meta property="og:description" content="The perfect place to order te perfect pizza">
+        <link rel="shortcut icon" href="pizza.jpg" type="image/x-icon">
+    </head>
+    <body>
+        <main>
+            <form action="data.json" method="POST">
+                <fieldset>
+                    <!--Input boxes-->
+                    <legend>User Information</legend>
+                    <ul>
+                        <li>User Name: <input type="text" name="user.name" id="username"></li>
+                        <li>Password: <input type="password" type="text"></li>
+                    </ul>
+                </fieldset>
+                <fieldset>
+                    <legend>What drink do you want?</legend>
+                    <ul>
+                        <!--Radio Buttons-->
+                        <li><input id="coke" value="Coke" name="drink1" type="radio">Coke</li>
+                        <li><input id="diet-coke" value="Diet Coke" name="drink2" type="radio">Diet Coke</li>
+                        <li><input id="sprite" value="Sprite" name="drink3" type="radio">Sprite</li>
+                        <li><input id="water" value="Water" name="drink4" type="radio">Water</li>
+                    </ul>
+                </fieldset>
+                <fieldset>
+                    <legend>Pizza Prefrence</legend>
+                    <ul>
+                        <!--Checkboxes-->
+                        <li><input type="checkbox">Plain</li>
+                        <li><input type="checkbox">Pepper</li>
+                        <li><input type="checkbox">Chicken</li>
+                        <li><input type="checkbox">Sausage</li> 
+                    </ul>
+                </fieldset>
+                <fieldset>
+                    <!--Text Area-->
+                    <legend>Special Intructions</legend>
+                    <ul>
+                        <li>Special Intructions<br><textarea name="special-intructions" id="special-instruction" cols="30" rows="10"></textarea></li>
+                    </ul>
+                    <!--Submit Button-->
+                    <button type="submit">Submit</button>
+                </fieldset>
+            </form>
+        </main>
+    </body>
+</html>
